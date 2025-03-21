@@ -301,10 +301,101 @@
 # for item in ls:                     #item or val can be anything, item woh cheez ha joh value ko single single kar k show karta ha 
 #     print(item)
 
-#17 repositery in github
+
+# repositery in github
 
 # git status 
 # git add .     sab kuch change ho jye joh likha huwa ho
 # git commit -m "second code"
 # git push
 
+# 17 for loop while loop
+
+# ls = ["lahore","faisalabad","jaranwala"]
+# for x in range(len(ls)):                  
+#     print(ls[x], x +1 )         #agar simple x rehny den gye toh yeh 0 sy start ho ga aur agar +1 kar den toh yeh 1 sy start ho ga
+
+# ls = ["lahore","faisalabad","jaranwala"]
+# i = 0
+# while i < len(ls):
+#     print(ls[i])
+#     i= i + 1
+
+
+# 18 range
+
+
+# for x in range(10):
+#     print(x)
+
+# for x in range(1,10):   #limitations start with 1
+#     print(x)
+
+# for x in range(1,10,2):   
+#      print(x)
+
+
+# for x in range(0,21,2):   #initial is start final spaces
+#      print(x)
+
+# i=0
+# while i<=20:
+#      print(i)
+# print (i)
+
+
+# 19 list comprensions
+
+# ls = [x for x in range(10)]
+# print(ls)
+
+# ls = [x for x in range(2,10,2)]     #x is item as 
+# print(ls)
+
+# ls = [x for x in range(2,21,2)]     # 
+# print(ls)
+
+# ls = ["Karchi","Jaranwala","Faisalabad","kiwi","test"]
+# ls = []
+# # for x in ls:                  #uper simple short method ha and this one is using append
+# #     if "a" is x:            # a is expression and x is item
+# #         ls2.append(x)       # than show x
+# print(ls2)
+
+
+# ls = ["Karchi","Jaranwala","Faisalabad","kiwi","test"]
+# ls2 = [x for x in ls if "i" in x]   #if use capital than it will show capital letter and if small than it will show small
+# print(ls2)
+
+# ls = ["Karachi","Jaranwala","Faisalabad","kiwi","test"]
+# ls2 = [x for x in ls if x != "Karachi"]
+# print(ls2)
+
+# ls = ["Karachi","Jaranwala","Faisalabad","kiwi","test"]
+# ls2 = [x[0].upper() for x in ls ]
+# print(ls2)
+
+
+# ls = ["karachi","jaranwala","faisalabad","kiwi","test"]
+# ls2 = [x[0].upper()+x[1:] for x in ls ]
+# print(ls2)
+
+# #or (same)
+
+# ls = ["karachi","jaranwala","faisalabad","kiwi","test"]
+# ls2 = [x.capitalize() for x in ls ]
+# print(ls2)
+
+
+# ls = ["karachi","jaranwala","faisalabad","kiwi","test"]
+# ls2 = [x[0].upper()+x[1:-1].lower()+x[-1:].upper() for x in ls]
+# print(ls2)
+
+# ls = ["karachi","jaranwala","faisalabad","kiwi","test"]
+# ls2 = [x for x in ls if "f" in x]
+# print(ls2)
+
+
+ls = ["karachi","jaranwala","faisalabad","kiwi","test"]
+ls2 = [x[0].upper() for x in ls if "F" in x]
+print(ls2)
