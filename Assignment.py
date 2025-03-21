@@ -12,19 +12,19 @@
 #         print("Congratulation you paased the eligiblilty criteria")
 
 
+# pending
 
+# edu = int (input("Enter your education : "))
+# age = int (input ("Enter your age : "))
+# height = float(input("Enter your height : "))
 
-edu = int (input("Enter your education : "))
-age = int (input ("Enter your age : "))
-height = float(input("Enter your height : "))
-
-if( edu => 12 and (age <= 32 and age >= 18)):
-    hprint("passed")
-elif( height =>5.6 and (edu => 12)) :
-    print("passed")
-elif(age <= 32 and age >= 18 and (height => 5.6))
-    print("passed")
-else("failed")
+# if( edu => 12 and (age <= 32 and age >= 18)):
+#     hprint("passed")
+# elif( height =>5.6 and (edu => 12)) :
+#     print("passed")
+# elif(age <= 32 and age >= 18 and (height => 5.6))
+#     print("passed")
+# else("failed")
     
 
 
@@ -70,8 +70,8 @@ else("failed")
 
 # assignment 07 
 
-st = "Jaranwala Faisalabad Lahore Karachi Multan"
-print(st.replace("J","j").replace("F","f").replace("L","l").replace("K","k").replace("M","m"))
+# st = "Jaranwala Faisalabad Lahore Karachi Multan"
+# print(st.replace("J","j").replace("F","f").replace("L","l").replace("K","k").replace("M","m"))
 
 
 #assignment 08
@@ -100,7 +100,7 @@ print(st.replace("J","j").replace("F","f").replace("L","l").replace("K","k").rep
 
 #   -------------------
 
-# ls = ["lahore","faisalabad","jaranwala"]
+# ls = ["lahore","faisalabad","jaranwala"]            pending
 # lp = []
 # for x in ls:
 #     p = x [1:2].upper()+x[0:-1]+x[-2:-1].upper()
@@ -108,13 +108,23 @@ print(st.replace("J","j").replace("F","f").replace("L","l").replace("K","k").rep
 # print(lp)
 
 
-#   -------------------
-ls = ["lahore","faisalabad","jaranwala"]
-lp = []
-for x in ls:                                                                    #insert has in and specific value 
-    lp.insert(0,x) 
-print(lp)
+# #   -------------------
+# ls = ["lahore","faisalabad","jaranwala"]
+# lp = []
+# for x in ls:                                                                    #insert has in and specific value 
+#     lp.insert(0,x) 
+# print(lp)
 
 #   -------------------
+# ls = ["lahore","faisalabad","jaranwala","karachi","multan"]
+# lp = []
+# for city in ls:
+#     lp.insert(0,city)
+# for city in ls: 
+
+# print(lp)
 #   -------------------
 #10 cities ko sab sy play reverse than first and last digit ko capitalize and darmiyan mai capital ko bhi small kar dy 
+
+# git status
+# git add .
