@@ -301,5 +301,10 @@
 # for item in ls:                     #item or val can be anything, item woh cheez ha joh value ko single single kar k show karta ha 
 #     print(item)
 
-# repositery in github
+#17 repositery in github
+
+# git status 
+# git add .     sab kuch change ho jye joh likha huwa ho
+# git commit -m "second code"
+# git push
 

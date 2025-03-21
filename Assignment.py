@@ -126,5 +126,3 @@
 #   -------------------
 #10 cities ko sab sy play reverse than first and last digit ko capitalize and darmiyan mai capital ko bhi small kar dy 
 
-# git status
-# git add .
