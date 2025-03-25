@@ -9,14 +9,14 @@
 
 # name="zohaib" #simple case
 
-# firstName = "Ahad" #camel case
+# firstVariableName = "Ahad" #camel case        #each word except the first start with a capital letter 
 
-# firstName = "Hoor" #pascal case
+# FirstVAriableName = "Hoor" #pascal case       #each word including the first start with a capital letter
 
-# first_name = "saad" #snake case
+# first_variable_name = "saad" #snake case      #each case is saperated with underscores
 
 # name1st = "Mano" # numbercase; case sensitive;
-# #1stname= "mano" # number cannnot be used in start
+# 1stname= "mano" # number cannnot be used in start
 
 # _name = "amna" # we can't use this type of variable because it is used in function 
 # # $name = no symbol in start can be used in python 
@@ -396,6 +396,198 @@
 # print(ls2)
 
 
-ls = ["karachi","jaranwala","faisalabad","kiwi","test"]
-ls2 = [x[0].upper() for x in ls if "F" in x]
-print(ls2)
+# ls = ["karachi","jaranwala","faisalabad","kiwi","test"]     #show only empty
+# ls2 = [x[0].upper() for x in ls if "F" in x]
+# print(ls2)
+
+
+
+# 20 tuples     tuple is unchangeable
+
+
+# tup = ("hello", "world") 
+# print(type(tup))
+# print(tup[1])
+# print(tup[0:])
+
+# tup = ("hello")
+# print(type(tup))
+
+# tup = ("hello",)
+# del tup
+# print(tup)
+
+# tup = ("hello",)
+# del tup[0]      #values ko change nahi kar sakty but yeh galat ha[0]
+# print(tup)
+
+# tp = tuple(("hello"))
+# print(type(tp))
+
+
+
+# tp = tuple(("hello"))   # written in notebook also.   
+# ls = list((tp))         # leanear and non leanear type  
+# print(type(ls))         # primitive(single value) data type (pass by value, different spaces) or non-primitive((multiple value)list,array, tuple) data type (pass by reference,)
+#                         # mit deep copy(multiple value) and shallow copy (single value) difference --OR-- pass by reference and pass by value difference
+
+# tp = tuple(("hello"))
+# ls = list((tp))
+# print(ls)
+
+# tp = tuple(("hello",))
+# ls = list((tp))
+# print(ls)
+
+# tp = tuple(("hello","world"))
+# ls = list((tp))
+# print(ls)
+
+
+# tp = tuple(("hello",))
+# ls = list((tp))
+# ls .append("guru99")
+# print(ls)
+
+# tp = tuple(("hello",))
+# ls = list((tp))
+# ls .append("guru99")
+# print(ls)
+
+# tup1 = ("tup 1",)
+# tup2 = ("tup 2",)
+# tup3 = tup1 + tup 2     # tuple ko siraf construtor method k through hi change kar sakty string ma 
+# print(tup3)
+
+                            # list ko construtor method k through tuple mai convert kar sakty by type casting 
+
+# tup = ("semester","annual","master")
+# (tup1, tup2, tup3) = tup            #unpacking in python (in java destructurize)
+# print(tup2)
+
+# tup = ("semester","annual","master")
+# print(tup[0])
+
+
+# tup = ("semester","annual","master","M Phil")
+# (tup1, tup2,*tup3) = tup            # (*)esteric packed all the unpacked data into himself in list
+# print(tup2)
+ 
+# tup = ("semester","annual","master","M Phil")
+# (tup1,*tup2,tup3) = tup            #
+# print(tup3)
+
+                    #
+
+# 21 sets (collection of things but not the same data)(only tuple is unchangeable/unmutable and all the other things are mutable/changeable)
+        # dictionary and set both use {} curely braces
+        #in set index and read is not used
+
+
+# st = {"hello","world"}      #set remove the 
+# print(type(st))
+
+# st = {"hello":"world"}      # : change the data type to dictionary
+# print(type(st))
+
+# st = set(("hello","world","!"))      #constructor method use double paranthesis 
+# print(type(st)) 
+# print(st)
+
+# koi variable denote kar diye jye parentheses mai toh woh parameter ha and agar koi value assign kar di jye woh argument ha 
+
+# dic = {"hello": "world"}        #temp
+
+# st = set(("hello","world","!"))      #
+# st.add("philosophy")
+# print(st)
+
+# st = set(("hello","world","!"))      # error but add one argument  thats why .add used to add only one argument
+# st.add("philosophy","minus")
+# print(st)
+
+
+# st = set(("hello","world","!"))      # update add multiple values
+# st2 = set(("philosophy","minus"))
+# st.update(st2)
+# print(st)
+
+# st = set(("hello","world","!"))
+# st.pop()                                 #pop rendomly delete any value
+# print(st)
+
+# st = set(("hello","world","!","hello"))         #in set any thing revise than it will delete it automatically.
+# print(st)
+
+# st = set(("hello","world","!","hello"))         #in set any thing revise than it will delete it automatically.
+# ls = list(st)                               #single parentheses used buz there is one variable only
+# print(st)                                   #agrument is add values and parameter is to add variable
+
+# st = set(("hello","world","!",True,0,1))    #True,False(in python T,F are capital and other are small) consider as boolean values and 0,1 consider as boolean values too
+# print(st)
+
+#                                         # enumb is used for conditions more than 2 
+
+# st = set((True,False,"hello","world","!",0,1,"yes","no"))    #yes and no print buz right now it is in set and double barces mean in string value
+# print(st)                                                   #order sequence laga raha means k strings and number ko differently prioritize kar raha ha means k order k sequence k accordingly
+
+
+# st = {"hello","world","!", 'hello world'}
+# st.remove("hello")                              #value di ha remove k sath tak k value remove ho 
+# print(st)
+
+
+# st = {"hello","world","!", 'hello world'}
+# st.remove("hello")                              #discard mai error nahi ata repeat hony py but purpose same ha remove and discard ka 
+# st.discard("hello")                 # discard is used as expectional handling       # key error diya ha so again repeat karny py so you know when this error occur 
+# print(st)
+
+
+# st = {"hello","world","!", 'hello world'}
+# st.clear()
+# print(st)
+
+
+# st = {"hello","world","!", 'hello world'}
+# del st[0]                                   # del is used for delete the variable and it used to delete everything not the data in curly braces  
+# print(st)
+
+# st1 = {"hello","world","!"}
+# st2 = {"new","food","menu"}
+# st3 = st1 + st2           # (+) is operator and (|) bar symbol is used for union
+# print(st3) 
+
+
+# st1 = {"hello","world",}
+# st2 = {"new","food","menu"}
+# st3 = st1 | st2           # (+) is operator and (|) bar symbol is used for union
+#                            # multiple sets k leye bar and 2 sy 3 k leye union
+# print(st3) 
+
+
+# st1 = {"hello","world",}
+# st2 = {"new","food","menu"}
+# st3 = st1.union(st2)           # (+) is operator and (|) bar symbol is used for union
+#                            # multiple sets k leye bar and 2 sy 3 k leye union
+# print(st3) 
+
+
+# st1 = {"hello","world",}
+# st2 = {"new","food","world"}
+# st3 = st1.intersection(st2)
+# print(st3) 
+
+# st1 = {"hello","world",}
+# st2 = {"new","food","world"}
+# st3 = st1 & st2               # & is used for intersection
+# print(st3)                    # mathematical symbol use ho raha hota woh operator hota ha 
+
+# st1 = {"hello","world",}
+# st2 = {"new","food","world"}
+# st3 = st1.difference(st2) 
+# print(st3) 
+
+# st1 = {"hello","world",}
+# st2 = {"new","food","world"}
+# st3 = st1 - st2             # (-) this sybol is used for difference
+# print(st3) 
